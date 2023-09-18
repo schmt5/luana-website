@@ -1,0 +1,32 @@
+---
+import { Image } from 'astro:assets';
+import myImage from '../../img/nicaragua-quad.jpg';
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="grid grid-cols-2 gap-9">
+      <div class="">
+        <h1 class="text-3xl font-medium tracking-tight sm:text-5xl">Hey, ich bin Luana Spinnler und bin Event Moderatorin</h1>
+        <p class="mt-6">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia obcaecati voluptatem
+          corporis fuga aspernatur repudiandae similique temporibus eum odit consequatur quis omnis
+          totam nostrum in nihil eaque quae, maiores soluta!
+        </p>
+        <p class="mt-6">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia obcaecati voluptatem
+          corporis fuga aspernatur repudiandae similique temporibus eum odit consequatur quis omnis
+          totam nostrum in nihil eaque quae, maiores soluta!
+        </p>
+      </div>
+      <div>
+          <Image src={myImage} alt="Luana Spinnler" class="rotate-6 rounded-3xl object-cover" height={500} />
+        <div class="mt-6">
+          <a href="">
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
