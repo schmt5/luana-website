@@ -51,11 +51,17 @@ import actionImage from '../../img/marti-video.jpg';
             Offerten anfragen
           </a>
         </div>
-        <div class="-translate-y-16">
+        <div class="hidden -translate-y-16 lg:block">
           <Image src={myImage} alt="Studium Quad" class="rounded-3xl" height={600} />
         </div>
       </div>
-      <Image src={actionImage} alt="In Aktion" class="rounded-3xl w-full h-[560px] object-cover" />
+      <div class="-mx-4 sm:-mx-6 lg:mx-0">
+        <Image
+          src={actionImage}
+          alt="In Aktion"
+          class="w-full lg:rounded-3xl object-cover lg:h-[560px]"
+        />
+      </div>
     </div>
   </div>
 </section>

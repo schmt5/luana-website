@@ -1,27 +1,6 @@
 ---
 import { Image } from 'astro:assets';
 import myImage from '../../img/lua-16-9.jpg';
-
-const services = [
-  {
-    step: '01',
-    name: 'Design',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-  },
-  {
-    step: '02',
-    name: 'Develop',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-  },
-  {
-    step: '03',
-    name: 'Maintain',
-    description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
-  },
-];
 ---
 
 <section class="py-16 sm:py-20">
@@ -31,11 +10,11 @@ const services = [
         Projekte als Event Moderatorin <span class="block">und Sprecherin</span>
       </h2>
 
-      <a href="projects/kkk" class="flex rounded-3xl bg-primary-500/10 dark:bg-primary-400/10">
+      <a href="projects/kkk" class="flex flex-col lg:flex-row rounded-3xl bg-primary-500/10 dark:bg-primary-400/10">
         <Image
           src={myImage}
           alt="Lua"
-          class="h-[300px] w-[400px] rounded-l-3xl object-cover"
+          class="lg:h-[360px] w-full lg:w-[540px] rounded-t-3xl lg:rounded-tr-none lg:rounded-l-3xl object-cover"
           transition:name="kkk"
         />
         <div class="flex flex-1 flex-col justify-between px-8 py-6">
@@ -62,36 +41,6 @@ const services = [
         </div>
       </a>
 
-      <a href="projects/kkk" class="flex rounded-3xl bg-primary-500/10 dark:bg-primary-400/10">
-        <Image
-          src={myImage}
-          alt="Lua"
-          class="h-[300px] w-[400px] rounded-l-3xl object-cover"
-          transition:name="kkk"
-        />
-        <div class="flex flex-1 flex-col justify-between px-8 py-6">
-          <div>
-            <p
-              class="mb-4 max-w-fit rounded-full bg-primary-200 px-2 py-px text-sm font-medium text-primary-950"
-            >
-              Moderation
-            </p>
-            <h3 class="text-xl font-medium">Kleinkunstkabühne</h3>
-            <p
-              class="text-base text-primary-950/70 dark:text-primary-200/70 sm:max-w-2xl sm:text-lg"
-            >
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci veniam saepe autem
-              amet, quae consectetur aperiam repellat error, eveniet voluptatibus necessitatibus.
-              Non assumenda voluptatem ratione necessitatibus minus quasi, sapiente eveniet.
-            </p>
-          </div>
-          <p
-            class="max-w-fit self-end text-accent decoration-wavy underline-offset-4 hover:underline"
-          >
-            mehr erfahren
-          </p>
-        </div>
-      </a>
     </div>
   </div>
 </section>
